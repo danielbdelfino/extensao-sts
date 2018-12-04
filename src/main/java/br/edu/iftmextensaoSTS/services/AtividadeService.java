@@ -17,4 +17,12 @@ public class AtividadeService {
 		
 		return atividade;
 	}
+	
+	public Atividade salvar(Atividade atividade) {
+		return repo.save(atividade);
+	}
+	
+	public void excluir(Atividade atividade) {
+		repo.delete(atividade);
+	}
 }
